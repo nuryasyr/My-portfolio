@@ -1,0 +1,162 @@
+.about__container{
+    background-color: var(--container-color);
+    height: 450px;
+    border-radius: 15px;
+    margin-top: 5rem;
+}
+
+/* Genel stil */
+.language__skills {
+  margin-top: 9rem;
+  width: 58%; /* Genişlik %70 */
+  height: 350px;
+  margin-left: auto; /* Ortalamak için */
+  margin-right: auto; /* Ortalamak için */
+
+}
+
+
+
+/* Dil konteyneri */
+.language__container {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-left: 9rem;
+  gap: 0.2rem; /* Dil ismi ile progress bar arasındaki boşluk */
+}
+
+
+/* İlerleme çubuğu stili */
+.progress {
+  width: 60%; /* İlerleme çubuğu genişliği küçültüldü */
+  background-color: var(--text-color);
+  border-radius: 10px;
+  overflow: hidden;
+  height: 10px; /* Yükseklik ayarı */
+ 
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: var(--title-color-dark);
+  border-radius: 10px;
+  transition: width 0.3s ease-in-out;
+}
+
+/* Dil ismi için stil */
+.language__container span {
+  font-size: 1.1rem;
+  color: var(--title-color);
+  font-weight: 500;
+  width: 20%; /* Dil isminin genişliği */
+}
+
+
+
+.mycertificate {
+  text-align: center;
+  margin-top: 15rem;
+}
+
+.sertifikatlar-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.certificate__title{
+  margin-bottom: 5rem;
+  font-size: var(--h2-font-size);
+}
+
+.sertifikat-guty {
+  margin: 0 10px;
+  width: 300px; /* Ensure consistent width */
+  display: flex;
+  flex-direction: column; /* Make sure image and text are stacked */
+  align-items: center;
+  overflow: hidden;
+  background: var(--container-color);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.top-row .sertifikat-guty {
+  width: 410px; /* Set fixed width for top row */
+}
+
+.middle-row .sertifikat-guty.stretched {
+  width: 500px; /* Stretch certificates in middle row */
+  height: auto; /* Auto height to preserve aspect ratio */
+}
+
+.bottom-row .sertifikat-guty {
+  width: 500px; /* Set fixed width for bottom row */
+}
+
+.surat {
+  width: 100%;
+  height: auto;
+}
+
+.certificate-name {
+  margin-top: 10px;
+  font-size: 1.2rem;
+color: var(--title-color-dark);
+}
+
+
+.surat{
+    width: 100%;
+    height: 100%;
+}
+
+.akylly{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+
+}
+.akyllygurleyanmi{
+    margin-bottom: 5rem;
+    margin-top: 8rem;
+    height: 300px;
+    width: 800px;
+    position: relative;
+    z-index: 1;
+    background-color: var(--container-color);
+    border-radius: 15px;
+}
+
+.gosadyrnak{
+    position: absolute;
+    top: -3rem;
+    left: 4rem;
+    font-size: 5rem;
+    z-index: 10;
+    background-color: var(--body-color);
+    padding: 1rem;
+    color: var(--title-color-dark);
+}
+
+.sozlerim{
+    margin-top: 2.8rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: 1.8rem;
+    position: relative;
+    text-align: justify;
+    color: var(--title-color);
+    
+}
+.men{
+    font-size: 1.3rem;
+    position: absolute;
+    margin-top: 2rem;
+    margin-left: 12rem;
+    color: var(--title-color-dark);
+    font-weight: 500;
+}

@@ -1,0 +1,76 @@
+.ulanyanlarym {
+  text-align: center;
+  margin-top: 10rem;
+  margin-bottom: 2rem;
+}
+
+.ulanyanlarym h1 {
+  font-size: 2rem;
+  color: var(--title-color); /* Use the global title color */
+}
+
+.hobbies-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: var(--container-color);
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 15px;
+  margin-bottom: 10rem;
+}
+
+.hobbies-wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Create a 5-column grid */
+  gap: 2rem; /* Adjust spacing between hobby containers */
+  grid-auto-rows: minmax(150px, auto); /* Dynamic row height */
+}
+
+.hobbi-box {
+  width: 150px;
+  height: 150px;
+  background-color: var(--body-color); /* Global body color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, z-index 0.3s ease, opacity 0.3s ease;
+}
+
+.hobbi-box:hover svg {
+  transform: scale(1.1); /* Hover sırasında ikonu biraz büyüt */
+  transition: transform 0.5s ease; /* Yumuşak geçiş efekti */color: var(--title-color-dark);
+}
+
+
+.hobbi-box svg {
+  font-size: 5rem;
+  transition: transform 0.5s ease;
+  color: var(--title-color); /* Bright icon color */
+}
+
+.hobbi-text {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.452); /* Semi-transparent background */
+  backdrop-filter: blur(30px); /* Blurred background effect */
+  font-size: 1rem;
+  padding: 0.2rem;
+  color: var(--title-color-dark);
+  text-align: center;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.hobbi-box:hover .hobbi-text {
+  bottom: 0;
+  backdrop-filter: blur(3px); /* Reduce blur on hover */
+  
+}
+
+

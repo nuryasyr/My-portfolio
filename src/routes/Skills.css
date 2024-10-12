@@ -1,0 +1,72 @@
+.skills-header {
+  text-align: center;
+  margin-top: 10rem;
+  margin-bottom: 2rem;
+}
+
+.skills-header h1 {
+  font-size: 2rem;
+  color: var(--title-color); /* Başlık rengini global CSS'ten alınacak */
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;   
+  align-items: center;
+  padding: 2rem;
+  background-color: var(--container-color);
+  max-width: 1200px; /* Genişliği sınırladık */
+  margin: 0 auto; /* Ortalamak için */
+  border-radius: 15px;
+}
+
+.skills-wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 sütunlu grid */
+  gap: 2rem; /* Container'lar arasındaki boşluk */
+  grid-auto-rows: minmax(150px, auto); /* Satır yüksekliği ayarı */
+}
+
+/* Square container */
+.square-skill {
+  width: 150px;
+  height: 150px;
+  background-color: var(--body-color); /* Renk, global CSS'ten alınacak */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden; /* İçeriğin taşmasını engelle */
+  transition: transform 0.3s ease, z-index 0.3s ease, opacity 0.3s ease;
+}
+
+.skill-icon {
+  font-size: 5rem; /* İkon boyutunu büyüttük */
+  color: var(--title-color); /* İkon rengi */
+  transition: transform 0.5s ease; /* İkon büyüme efekti */
+}
+
+.skill-description {
+  position: absolute;
+  bottom: -100%; /* Yazıyı başlangıçta görünmez kıl */
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.452); /* Yarı şeffaf arka plan */
+  backdrop-filter: blur(30px); /* Blur efekti */
+  color: var(--title-color-dark); /* Yazı rengi */
+  font-size: 1rem;
+  padding: 0.2rem;
+  text-align: center;
+  transition: all 0.3s ease; /* Yumuşak geçiş efekti */
+  z-index: 2;
+}
+
+.square-skill:hover .skill-icon {
+  transform: scale(1.1); /* Hover sırasında ikonu biraz büyüt */
+  color: var(--title-color-dark);
+}
+
+.square-skill:hover .skill-description {
+  bottom: 0; /* Yazıyı yukarı kaydır */
+  backdrop-filter: blur(3px); /* Blur efektini azalt */
+}
